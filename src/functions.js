@@ -136,7 +136,9 @@ const findTheNeedle = sentences => {
  *
  */
 
-// ...
+const findTheNeedleIndex = sentences => {
+  return sentences.findIndex(sentence => sentence.includes('needle'))
+}
 
 /*
  *` 10)  Define a function someoneToLove that accepts an array of
