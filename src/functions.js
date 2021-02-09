@@ -24,7 +24,7 @@
  */
 
 const yelling = words => {
-  // Your code here
+  return words.map(word => word.toUpperCase())
 }
 
 /**
@@ -37,7 +37,9 @@ const yelling = words => {
  *
  */
 
-// ...
+const doubleTrouble = numbers => {
+  return numbers.map(number => number * 2)
+}
 
 /*
  * 3) Define a function stringyIndexes() that takes an array of
@@ -48,7 +50,9 @@ const yelling = words => {
  *
  */
 
-// ...
+const stringyIndexes = words => {
+  return words.map((word, index) => `${word} is at index ${index}`)
+}
 
 /*
  * 4) Define a function onlyTheEvenSurvive that accepts an array of
