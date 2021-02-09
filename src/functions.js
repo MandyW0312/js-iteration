@@ -123,7 +123,9 @@ const everyoneIsOdd = numbers => {
  *
  */
 
-// ...
+const findTheNeedle = sentences => {
+  return sentences.find(sentence => sentence.includes('needle'))
+}
 
 /*
  * 9) Define a function findTheNeedleIndex that accepts an array of
