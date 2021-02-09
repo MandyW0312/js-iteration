@@ -95,7 +95,11 @@ const onlyTheEvenIndexedSurvive = numbers => {
  *
  */
 
-// ...
+const bestMoviesOfTheYear = movies => {
+  return movies
+    .filter((movie, year) => movie.score > 90 && movie.year)
+    .map(movie => movie.name)
+}
 
 /*
  * 7) Define a function everyoneIsOdd that accepts an array of
@@ -106,7 +110,9 @@ const onlyTheEvenIndexedSurvive = numbers => {
  *
  */
 
-// ...
+const everyoneIsOdd = numbers => {
+  return numbers.every(number => number % 2 !== 0)
+}
 
 /*
  * 8) Define a function findTheNeedle that accepts an array of
