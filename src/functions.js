@@ -186,9 +186,19 @@ const someoneToLove = words => {
  *
  */
 
-// function objectKeys(objectOfHobbies) {
-//   // Your code here
-// }
+function objectKeys(objectOfHobbies) {
+  // Showing the Object.Keys Way
+  // const keys = Object.keys(objectOfHobbies)
+  // const answer = keys.map(key => {
+  //   const hobby = objectOfHobbies[key]
+  //   return `${key} - ${hobby.title}`
+  // })
+  // Showing the Object.Entries Way
+  const answer = Object.entries(objectOfHobbies).map(
+    ([key, value]) => `${key} - ${value.title}`
+  )
+  return answer
+}
 
 // ...
 
