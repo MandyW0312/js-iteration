@@ -62,7 +62,9 @@ const stringyIndexes = words => {
  *
  */
 
-// ...
+const onlyTheEvenSurvive = numbers => {
+  return numbers.filter(number => number % 2 === 0)
+}
 
 /*
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
