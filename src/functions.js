@@ -74,7 +74,9 @@ const onlyTheEvenSurvive = numbers => {
  *
  */
 
-// ...
+const onlyTheEvenIndexedSurvive = numbers => {
+  return numbers.filter((number, index) => index % 2 === 0)
+}
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
