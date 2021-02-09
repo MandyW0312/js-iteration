@@ -149,7 +149,9 @@ const findTheNeedleIndex = sentences => {
  *
  */
 
-// ...
+const someoneToLove = words => {
+  return words.some(word => word.length === 4)
+}
 
 /*
  * 11)  Define a function objectKeys that accepts an object of
